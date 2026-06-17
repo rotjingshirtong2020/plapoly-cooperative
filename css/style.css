@@ -1,0 +1,464 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f7f7f7;
+}
+/* HEADER */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:white;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:80px;
+}
+
+.logo-text h2{
+    font-size:20px;
+}
+
+.logo-text p{
+    color:#d71920;
+    font-weight:bold;
+}
+
+
+/* NAVIGATION */
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:black;
+    font-weight:500;
+}
+
+nav ul li a:hover{
+    color:#d71920;
+}
+
+
+/* BUTTONS */
+
+.buttons button{
+    padding:12px 20px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.login{
+    background:white;
+    border:1px solid #d71920 !important;
+    color:#d71920;
+}
+
+.join{
+    background:#d71920;
+    color:white;
+}
+
+
+
+/* HERO SECTION */
+
+.hero{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:70px 8%;
+
+    background:white;
+}
+
+.hero-text{
+
+    width:50%;
+
+}
+
+.hero-text span{
+
+    color:#d71920;
+}
+
+.hero-text h1{
+
+    font-size:55px;
+
+    margin-top:10px;
+}
+
+.hero-text p{
+
+    margin:20px 0;
+
+    color:#555;
+
+    line-height:1.8;
+}
+
+
+
+.hero-btn button{
+
+    padding:15px 30px;
+
+    border:none;
+
+    border-radius:10px;
+
+    margin-right:15px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+
+
+.join-btn{
+
+    background:#d71920;
+
+    color:white;
+}
+
+
+
+.learn-btn{
+
+    background:#FFD700;
+
+    color:black;
+}
+
+
+
+.hero-image img{
+
+    width:550px;
+
+    max-width:100%;
+}
+/* FEATURES */
+
+.features{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+    padding:50px 8%;
+
+}
+
+
+
+.card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+}
+
+
+
+.card i{
+
+    font-size:40px;
+
+    color:#d71920;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.card h3{
+
+    margin-bottom:10px;
+
+}
+
+
+
+.card p{
+
+    color:#555;
+
+}
+
+
+
+
+/* STATISTICS */
+
+.stats{
+
+    background:#111;
+
+    color:white;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    text-align:center;
+
+    padding:50px 8%;
+
+}
+
+
+
+.stat h2{
+
+    color:#FFD700;
+
+    font-size:40px;
+
+}
+
+
+
+.stat p{
+
+    margin-top:10px;
+
+}
+
+
+
+/* WHY JOIN */
+
+.why{
+
+    padding:70px 8%;
+
+    text-align:center;
+
+}
+
+
+
+.why h2{
+
+    margin-bottom:40px;
+
+}
+
+
+
+.why-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+
+
+.why-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+}
+
+
+
+.why-card i{
+
+    font-size:40px;
+
+    color:#d71920;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.why-card p{
+
+    color:#555;
+
+    margin-top:10px;
+
+}
+
+
+
+/* FOOTER */
+
+footer{
+
+    background:#d71920;
+
+    color:white;
+
+    padding:40px 8%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+
+footer input{
+
+    padding:12px;
+
+    width:250px;
+
+    border:none;
+
+    border-radius:5px;
+
+}
+
+
+
+footer button{
+
+    padding:12px 20px;
+
+    border:none;
+
+    background:#FFD700;
+
+    cursor:pointer;
+
+    margin-left:10px;
+
+}
+
+
+
+.socials i{
+
+    margin-left:15px;
+
+    font-size:25px;
+
+    cursor:pointer;
+
+}
+
+
+
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width:768px){
+
+    header{
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+
+
+    nav ul{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+
+
+    .hero{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+
+
+    .hero-text{
+
+        width:100%;
+
+    }
+
+
+
+    .hero-text h1{
+
+        font-size:40px;
+
+    }
+
+
+
+    .features,
+
+    .stats,
+
+    .why-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    footer{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        text-align:center;
+
+    }
+
+}
