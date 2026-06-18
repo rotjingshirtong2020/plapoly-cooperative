@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/membership.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    
+<!-- HEADER -->
+<header>
+    <div class="logo">
+        <img src="images/logo.png" alt="logo">
+        <div class="logo-text">
+            <h2>TECHNOLOGY FOR PROGRESS</h2>
+            <p>COOPERATIVE SOCIETY</p>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+ 
+<!-- HERO -->
+<section class="contact-hero">
+    <div class="hero-inner">
+        <div class="hero-label">Get In Touch</div>
+        <h1>We're Here<br><span>When You Need Us</span></h1>
+        <p>Reach out for enquiries about membership, savings, loans, or any cooperative matter. Our team responds within one business day.</p>
+    </div>
+    <div class="hero-cards">
+        <div class="hero-info-card">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+                <p class="card-label">Call Us</p>
+                <p class="card-value">+234 801 234 5678</p>
+            </div>
+        </div>
+        <div class="hero-info-card">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+                <p class="card-label">Email Us</p>
+                <p class="card-value">info@tfpcoop.org</p>
+            </div>
+        </div>
+        <div class="hero-info-card">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+                <p class="card-label">Office Hours</p>
+                <p class="card-value">Mon – Fri, 8am – 5pm</p>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+<!-- MAIN CONTENT: FORM + INFO -->
+<section class="contact-body">
+ 
+    <!-- LEFT: CONTACT FORM -->
+    <div class="contact-form-panel">
+        <h2>Send a Message</h2>
+        <p class="panel-sub">Fill in your details and we'll get back to you shortly.</p>
+ 
+        <form class="contact-form" id="contactForm">
+ 
+            <div class="cf-row">
+                <div class="cf-field">
+                    <label for="cf-name">Full Name</label>
+                    <input type="text" id="cf-name" placeholder="e.g. Adebayo Emmanuel" required>
+                </div>
+                <div class="cf-field">
+                    <label for="cf-email">Email Address</label>
+                    <input type="email" id="cf-email" placeholder="e.g. you@email.com" required>
+                </div>
+            </div>
+ 
+            <div class="cf-row">
+                <div class="cf-field">
+                    <label for="cf-phone">Phone Number</label>
+                    <input type="tel" id="cf-phone" placeholder="e.g. 08012345678">
+                </div>
+                <div class="cf-field">
+                    <label for="cf-subject">Subject</label>
+                    <select id="cf-subject" required>
+                        <option value="">Select a topic</option>
+                        <option>Membership Enquiry</option>
+                        <option>Savings Information</option>
+                        <option>Loan Application</option>
+                        <option>Investment Opportunities</option>
+                        <option>Technical Support</option>
+                        <option>General Enquiry</option>
+                    </select>
+                </div>
+            </div>
+ 
+            <div class="cf-field full">
+                <label for="cf-message">Your Message</label>
+                <textarea id="cf-message" rows="6" placeholder="Write your message here..." required></textarea>
+            </div>
+ 
+            <button type="submit" class="cf-submit">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+ 
+            <!-- Success feedback -->
+            <div class="cf-success" id="cfSuccess">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Message sent! We'll respond within one business day.</span>
+            </div>
+ 
+        </form>
+    </div>
+ 
+    <!-- RIGHT: CONTACT INFO -->
+    <div class="contact-info-panel">
+ 
+        <div class="info-block">
+            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+                <h4>Head Office</h4>
+                <p>12 Progress Avenue, Central Business District,<br>Abuja, FCT, Nigeria.</p>
+            </div>
+        </div>
+ 
+        <div class="info-block">
+            <div class="info-icon"><i class="fa-solid fa-phone-volume"></i></div>
+            <div>
+                <h4>Phone Numbers</h4>
+                <p>+234 801 234 5678</p>
+                <p>+234 701 987 6543</p>
+            </div>
+        </div>
+ 
+        <div class="info-block">
+            <div class="info-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+            <div>
+                <h4>Email Addresses</h4>
+                <p>info@tfpcoop.org</p>
+                <p>support@tfpcoop.org</p>
+            </div>
+        </div>
+ 
+        <div class="info-block">
+            <div class="info-icon"><i class="fa-solid fa-calendar-days"></i></div>
+            <div>
+                <h4>Working Hours</h4>
+                <p>Monday – Friday: 8:00am – 5:00pm</p>
+                <p>Saturday: 9:00am – 1:00pm</p>
+                <p>Sunday: Closed</p>
+            </div>
+        </div>
+ 
+        <!-- Social Links -->
+        <div class="social-row">
+            <p class="social-label">Follow Us</p>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+ 
+    </div>
+ 
+</section>
+ 
+<!-- MAP SECTION -->
+<section class="map-section">
+    <div class="map-header">
+        <h2>Find Our Office</h2>
+        <p>We are centrally located and easily accessible from major roads in Abuja.</p>
+    </div>
+    <div class="map-embed">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.8561624098794!2d7.491301!3d9.057855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0baf7da48d0d%3A0x99a8fe4168c50bc8!2sCentral%20Business%20District%2C%20Abuja%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1700000000000"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Office Location Map">
+        </iframe>
+    </div>
+</section>
+ 
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Technology For Progress Cooperative Society. All rights reserved.</p>
+</footer>
+</body>
+</html>
