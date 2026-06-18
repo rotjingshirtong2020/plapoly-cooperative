@@ -462,3 +462,516 @@ footer button{
     }
 
 }
+
+/* ABOUT PAGE */
+/* about page */
+.about-hero{
+
+height:50vh;
+
+background:#111;
+
+color:white;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+}
+
+
+.about-hero h1{
+
+font-size:60px;
+
+color:#FFD700;
+
+}
+
+
+
+.story{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:80px 8%;
+
+gap:50px;
+
+}
+
+
+.story-text{
+
+width:50%;
+
+}
+
+
+.story-image img{
+
+width:450px;
+
+}
+
+
+
+.mission{
+
+display:flex;
+
+gap:30px;
+
+padding:50px 8%;
+
+}
+
+
+.box{
+
+background:white;
+
+padding:40px;
+
+border-radius:15px;
+
+text-align:center;
+
+flex:1;
+
+}
+
+
+.box i{
+
+font-size:50px;
+
+color:#d71920;
+
+margin-bottom:20px;
+
+}
+
+
+
+.values{
+
+padding:80px;
+
+text-align:center;
+
+}
+
+
+.values-container{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:20px;
+
+}
+
+
+.value{
+
+background:#FFD700;
+
+padding:40px;
+
+border-radius:10px;
+
+}
+
+
+
+.leaders{
+
+padding:80px;
+
+text-align:center;
+
+}
+
+
+
+.leaders-container{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+}
+
+
+.leader img{
+
+width:200px;
+
+border-radius:50%;
+
+}
+
+
+
+.cta{
+
+background:#d71920;
+
+color:white;
+
+text-align:center;
+
+padding:80px;
+
+}
+
+
+.cta button{
+
+padding:15px 35px;
+
+border:none;
+
+background:#FFD700;
+
+margin-top:20px;
+
+cursor:pointer;
+
+font-weight:bold;
+
+}
+/* SERVICES PAGE */
+/* =======================
+   SERVICES HERO SECTION
+======================= */
+
+.services-hero{
+
+    background:#111;
+
+    color:white;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+}
+
+.services-hero h1{
+
+    font-size:50px;
+
+    color:#FFD700;
+
+    margin-bottom:20px;
+
+}
+
+.services-hero p{
+
+    font-size:18px;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+
+
+/* =======================
+   SERVICES CARDS
+======================= */
+
+.services-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    padding:70px 8%;
+
+    background:#f5f5f5;
+
+}
+
+
+
+.service-card{
+
+    background:white;
+
+    padding:35px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+
+}
+
+
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.service-card i{
+
+    font-size:50px;
+
+    color:#D71920;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.service-card h2{
+
+    margin-bottom:15px;
+
+    color:#111;
+
+}
+
+
+
+.service-card p{
+
+    color:#555;
+
+    line-height:1.7;
+
+}
+
+
+
+
+/* =======================
+   WHY CHOOSE US
+======================= */
+
+.choose-us{
+
+    padding:80px 8%;
+
+    text-align:center;
+
+}
+
+
+
+.choose-us h1{
+
+    margin-bottom:50px;
+
+    color:#D71920;
+
+}
+
+
+
+.choose-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+}
+
+
+
+.choose-card{
+
+    background:white;
+
+    width:300px;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+
+}
+
+
+
+.choose-card h3{
+
+    color:#111;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.choose-card p{
+
+    color:#555;
+
+}
+
+
+
+
+/* =======================
+   CALL TO ACTION
+======================= */
+
+.cta{
+
+    background:#D71920;
+
+    color:white;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+}
+
+
+
+.cta h1{
+
+    font-size:40px;
+
+}
+
+
+
+.cta p{
+
+    margin:20px 0;
+
+}
+
+
+
+.cta button{
+
+    padding:15px 35px;
+
+    background:#FFD700;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+}
+
+
+
+.cta button:hover{
+
+    background:white;
+
+}
+
+
+
+
+/* =======================
+   FOOTER
+======================= */
+
+footer{
+
+    background:#111;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+
+
+
+/* =======================
+   RESPONSIVE DESIGN
+======================= */
+
+@media(max-width:768px){
+
+
+    .services-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .choose-container{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+
+    .service-card{
+
+        width:100%;
+
+    }
+
+
+    .choose-card{
+
+        width:100%;
+
+    }
+
+
+    .services-hero h1{
+
+        font-size:35px;
+
+    }
+
+
+    .cta h1{
+
+        font-size:30px;
+
+    }
+
+}

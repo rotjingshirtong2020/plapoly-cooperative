@@ -1,0 +1,150 @@
+/* HERO */
+.membership-hero{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.membership-hero h1{
+    color:#FFD700;
+    font-size:45px;
+}
+
+.membership-hero p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+/* PLANS */
+.plans-section{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    padding:70px 8%;
+    background:#f5f5f5;
+}
+
+.plan-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.plan-card:hover{
+    transform:translateY(-10px);
+}
+
+.plan-card i{
+    font-size:40px;
+    color:#D71920;
+}
+
+.plan-card h2{
+    margin:15px 0;
+}
+
+.plan-card ul{
+    text-align:left;
+    margin:20px 0;
+}
+
+.plan-card ul li{
+    margin:10px 0;
+}
+
+.plan-card button{
+    background:#D71920;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* Premium highlight */
+.premium{
+    border:3px solid #FFD700;
+}
+
+/* BENEFITS */
+.benefits{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.benefits h1{
+    color:#D71920;
+    margin-bottom:40px;
+}
+
+.benefit-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.benefit-box{
+    padding:25px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+.benefit-box i{
+    font-size:35px;
+    color:#D71920;
+}
+
+/* FORM */
+.join-section{
+    background:#111;
+    color:white;
+    padding:80px 20px;
+    text-align:center;
+}
+
+.join-section form{
+    max-width:500px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.join-section input,
+.join-section select{
+    padding:12px;
+    border:none;
+    border-radius:8px;
+}
+
+.join-section button{
+    background:#FFD700;
+    padding:12px;
+    border:none;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .plans-section{
+        grid-template-columns:1fr;
+    }
+
+    .benefit-grid{
+        grid-template-columns:1fr;
+    }
+}
